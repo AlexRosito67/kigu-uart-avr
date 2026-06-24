@@ -28,7 +28,7 @@ Part of the **Kigu** toolchain by [Rosito Bench](https://github.com/AlexRosito67
 ## Usage
 
 ```bash
-kigu-uart-avr --model <MODEL> --clock <FREQ> --baud <RATE> [options]
+kigu-uart-avr --clock <FREQ> --baud <RATE> [options]
 ```
 
 ### Examples
@@ -36,7 +36,7 @@ kigu-uart-avr --model <MODEL> --clock <FREQ> --baud <RATE> [options]
 ```bash
 
 # ATmega328P at 11.0592 MHz (exact 115200 baud)
-kigu-uart-avr --model AVR8 --clock 11059200 --baud 115200
+kigu-uart-avr --clock 11059200 --baud 115200
 
 ```
 
@@ -61,7 +61,6 @@ kigu-uart-avr --model AVR8 --clock 11059200 --baud 115200
 
 | Flag | Description |
 |------|-------------|
-| `--model` | Target MCU family (required) |
 | `--clock` | Source clock frequency — e.g. `80M`, `16M`, `11059200` (required) |
 | `--baud` | Desired baud rate (required) |
 | `-h`, `--help` | Show help |
