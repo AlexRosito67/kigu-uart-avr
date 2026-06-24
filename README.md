@@ -63,6 +63,7 @@ kigu-uart-avr --clock 11059200 --baud 115200
 |------|-------------|
 | `--clock` | Source clock frequency — e.g. `80M`, `16M`, `11059200` (required) |
 | `--baud` | Desired baud rate (required) |
+| `--baud` | List standard baud rates (optional) |
 | `-h`, `--help` | Show help |
 
 ---

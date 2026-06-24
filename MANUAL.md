@@ -35,8 +35,8 @@ Covers Atmel/Microchip AVR 8-bit microcontrollers (ATmega, ATtiny families).
 - **Formula:** `UBRR = clock / (oversampling × baud) - 1`
 
 ```bash
-kigu-uart-avr --model AVR8 --clock 16M  --baud 9600
-kigu-uart-avr --model AVR8 --clock 11059200 --baud 115200
+kigu-uart-avr --clock 16M  --baud 9600
+kigu-uart-avr --clock 11059200 --baud 115200
 ```
 
 > **Note:** 16 MHz crystals produce 3.5% error at 115200 baud — outside the safe range. Use an 11.0592 MHz crystal for exact 115200 baud with AVR.
@@ -70,7 +70,7 @@ A **Status: ERROR** means the baud error exceeds 2% and framing errors are likel
 Exit code `2` allows scripting:
 
 ```bash
-kigu-uart-avr --model AVR8 --clock 16M --baud 115200 || echo "Choose a different clock"
+kigu-uart-avr --clock 16M --baud 115200 || echo "Choose a different clock"
 ```
 
 ---
@@ -82,10 +82,6 @@ kigu-uart-avr --model AVR8 --clock 16M --baud 115200 || echo "Choose a different
 | ATmega328P | 11.0592 MHz | 115200 | 0.00% | Exact |
 | ATmega328P | 16 MHz | 115200 | 3.55% | Too high |
 | ATmega328P | 16 MHz | 9600 | 0.16% | OK |
-| ESP32 | 80 MHz | 115200 | 0.06% | OK |
-| ESP32 | 40 MHz | 115200 | 0.06% | OK |
-| STM32 | 72 MHz | 115200 | 0.00% | Exact |
-| STM32 | 84 MHz | 115200 | 0.00% | Exact |
 
 ---
 
