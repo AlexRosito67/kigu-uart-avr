@@ -15,6 +15,9 @@ No browser. No online tool. No guessing. Run it from your terminal, get the exac
 
 Part of the **Kigu** toolchain by [Rosito Bench](https://github.com/AlexRosito67).
 
+>**To download your free binaries please go to:**
+**(Rosito Bench Store)[https://hasaki.lemonsqueezy.com]**
+
 ---
 
 ## Supported families
