@@ -18,7 +18,6 @@ Part of the **Kigu** toolchain by [Rosito Bench](https://github.com/AlexRosito67
 ---
 
 ### kigu-uart-avr is free — AVR8 only.
- **To download your free binaries please go to:** **[Rosito Bench Store](https://hasaki.lemonsqueezy.com).**
 
 ---
 
@@ -86,6 +85,5 @@ kigu-uart-avr --clock 11059200 --baud 115200
 ## License
 
 kigu-uart-avr is free — AVR8 only.
-For ESP32, STM32, and GENERIC support, see [kigu-uart Pro](https://hasaki.lemonsqueezy.com).
 
 *Rosito Bench — Tiny tools. Big solutions.*
